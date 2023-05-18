@@ -1,0 +1,13 @@
+
+name: hallo
+
+on:
+  workflow_dispatch
+
+jobs:
+  instal:
+    name: Runs Data Sync Task
+    runs-on: ubuntu-latest
+    steps:
+      - name: install package
+        run: pip install favicons
