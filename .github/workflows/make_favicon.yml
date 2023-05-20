@@ -1,5 +1,5 @@
 
-name: hallo
+name: make_favicon
 
 on:
   workflow_dispatch
@@ -11,3 +11,5 @@ jobs:
     steps:
       - name: install package
         run: pip install favicons
+      - name: make favicon
+        run: python make_favicon.py
